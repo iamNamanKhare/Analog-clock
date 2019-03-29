@@ -1,0 +1,40 @@
+.body {
+        align-items: center;
+        display: flex;
+        flex: 1;
+      }
+      .clock {
+        border-radius: 50%;
+        margin: auto;
+        background-color: white;
+        height: 50rem;
+        width: 50rem;
+        border: 20px solid white;
+      }
+      .clock-face {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        transform: translateY(-3px);
+        background-image:  linear-gradient(90deg, #ff00cc, #333399 );
+        border-radius: 50%;
+    }
+      .hand {
+        width: 50%;
+        height: 6px;
+        background: black;
+        position: absolute;
+        top: 50%;
+        transform-origin: 100%;
+        transform: rotate(90deg);
+        transition: all 0.5s;
+      }
+      .hour-hand{
+          background-color: lightgreen;
+      }
+      .min-hand{
+          background-color: hotpink;
+      }
+      .sec-hand{
+          background-color: cyan;
+      }
